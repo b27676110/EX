@@ -2,8 +2,6 @@
 import java.awt.*;
 import java.awt.event.*;
 
-import com.sun.glass.events.WindowEvent;
-
 public class Mainframe extends Frame {
 	private Button btnExit = new Button("Exit");
 
@@ -14,6 +12,8 @@ public class Mainframe extends Frame {
 	public void init() {
 		this.setSize(100, 100);
 		this.setLocation(100, 100);
+		
+		
 
 		  this.addWindowListener(new WindowAdapter() {
 			     public void windowClosing(WindowEvent ev) {
